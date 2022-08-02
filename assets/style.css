@@ -1,0 +1,375 @@
+@charset "UTF-8";
+/*
+Theme Name: Codeshaper
+Theme URI: 
+Author: 
+Author URI: 
+Description: Task => website template
+Version: 
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+# Typography
+# Globals
+# Sections
+  ## Header
+  ## Journey area
+  ## footer area
+
+  
+--------------------------------------------------------------*/
+/*-----------------
+    # Typography
+-----------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Uchen&display=swap");
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Uchen', serif; */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  color: #303030;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-family: "Uchen", serif;
+  color: #000;
+}
+
+section {
+  padding: 90px 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+/*--------------------------------------------------------------
+# Globals
+--------------------------------------------------------------*/
+.container {
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* header starts  */
+
+/*----------------------------------------------
+    # Nav bar 
+----------------------------------------------*/
+
+.header-logo a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #000;
+}
+
+nav {
+  padding: 40px 0;
+  background: #fff;
+  position: fixed;
+  width: 1600px;
+  z-index: 999;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar li {
+  font-family: "Montserrat", sans-serif;
+  margin: 0 4px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #303030;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.navbar li a img {
+  margin-right: 4px;
+}
+
+.navbar li:hover {
+  transition: all 0.3s;
+}
+
+/*----------------------------------------------
+    # Mobile Nav bar 
+----------------------------------------------*/
+
+.mobile-navbar {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgb(51 63 72 / 90%);
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow-y: auto;
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+  z-index: -99;
+  transition: all 0.3s;
+}
+
+.mobile-navbar.active {
+  visibility: visible;
+  opacity: 1;
+  z-index: 9999;
+  display: flex;
+}
+
+.mobile-navbar li {
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.mobile-navbar li a {
+  color: #fff;
+  font-size: 55px;
+  text-transform: uppercase;
+}
+
+.mobile-menu-btn {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border: 1px solid;
+  position: relative;
+  margin: 15px 0;
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.mobile-menu-btn.active {
+  opacity: 0;
+}
+
+.mobile-menu-btn .bar-1 {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 35px;
+  height: 2px;
+  background: #1d1d1d;
+}
+.mobile-menu-btn .bar-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 2px;
+  background: #1d1d1d;
+}
+.mobile-menu-btn .bar-3 {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 35px;
+  height: 2px;
+  background: #1d1d1d;
+}
+
+.btn-close {
+  position: absolute;
+  top: 30px;
+  right: 75px;
+  font-size: 45px;
+  color: #1d1d1d;
+  background: #fff;
+  border: 1px solid;
+  padding: 0 15px 5px 15px;
+  cursor: pointer;
+}
+
+/* header ends  */
+
+/*----------------------------------------------
+    # journey area s
+----------------------------------------------*/
+
+.journey-area {
+  padding: 0 40px;
+}
+
+.journey-wrapper {
+  margin-top: 78px;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 70px;
+  align-items: center;
+}
+
+.discover-items {
+  border: 1px solid #333;
+  margin: 0 auto;
+  width: 390px;
+  height: 520px;
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.discover-items-wrap {
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #ab4e47;
+  height: 500px;
+  width: 370px;
+}
+
+.discover-items .discover-title {
+  font-weight: 700;
+  font-size: 15px;
+  padding-top: 128px;
+  letter-spacing: -1.3px;
+}
+
+.discover-items .discover-heading {
+  color: #fff;
+  font-size: 34px;
+  font-weight: 400;
+  padding: 0 35px;
+  line-height: 38px;
+  letter-spacing: -0.9px;
+}
+
+.discover-items .discover-btn {
+  display: inline-block;
+  width: 222px;
+  height: 46px;
+  line-height: 48px;
+  text-align: center;
+  border: 1px solid #fff;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  font-size: 15px;
+  letter-spacing: 1.3px;
+}
+
+.discover-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.discover-text .discover-text-wrapper {
+  width: 435px;
+}
+
+.discover-text .discover-text-wrapper .discover-text-title {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+.discover-text .discover-text-wrapper .discover-text-heading {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 52px;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+.discover-text .discover-text-wrapper .discover-text-description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.5px;
+}
+
+.frame-items {
+  margin-top: 100px;
+}
+
+.frame-items img {
+  max-width: 100%;
+}
+
+/*----------------------------------------------
+    # footer area 
+----------------------------------------------*/
+
+.footer-area {
+  display: flex;
+  padding-bottom: 105px;
+}
+
+.footer-btn {
+  display: inline-block;
+  width: 192px;
+  height: 48px;
+  line-height: 48px;
+  padding-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 0 auto;
+}

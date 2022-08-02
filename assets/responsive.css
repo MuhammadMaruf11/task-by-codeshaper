@@ -1,0 +1,292 @@
+/* Laptop layout min 1200px */
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .container {
+    width: 90vw;
+  }
+
+  nav {
+    width: 90vw;
+  }
+
+  .mobile-navbar {
+    display: none;
+  }
+
+  .journey-area {
+    padding: 0;
+  }
+
+  .journey-wrap {
+    width: 360px;
+    margin: 0 auto;
+  }
+
+  .discover-items {
+    margin-top: 50px;
+    width: 288px;
+    height: 384px;
+  }
+
+  .discover-items .discover-title {
+    font-size: 14px;
+    padding-top: 70px;
+  }
+
+  .discover-items .discover-heading {
+    font-size: 24px;
+  }
+
+  .discover-items .discover-btn {
+    font-size: 14px;
+    width: 200px;
+    margin-bottom: 60px;
+  }
+
+  .discover-items-wrap {
+    width: 278px;
+    height: 374px;
+  }
+
+  .frame-items {
+    margin-top: 50px;
+  }
+
+  .frame-items img {
+    max-width: 80%;
+  }
+
+  .discover-text .discover-text-wrapper .discover-text-title {
+    font-size: 14px;
+  }
+  .discover-text .discover-text-wrapper .discover-text-heading {
+    font-size: 38px;
+  }
+
+  .discover-text .discover-text-wrapper .discover-text-description {
+    font-size: 15px;
+  }
+}
+
+/* Mini laptop layout min 769px */
+
+@media (min-width: 769px) and (max-width: 1199px) {
+  .container {
+    width: 95vw;
+  }
+
+  nav {
+    width: 95vw;
+  }
+
+  .mobile-navbar {
+    display: none;
+  }
+  .journey-area {
+    padding: 0;
+  }
+
+  .journey-wrap {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .discover-items {
+    margin-top: 40px;
+    width: 256px;
+    height: 341px;
+  }
+
+  .discover-items .discover-title {
+    font-size: 14px;
+    padding-top: 50px;
+  }
+
+  .discover-items .discover-heading {
+    font-size: 24px;
+  }
+
+  .discover-items .discover-btn {
+    font-size: 14px;
+    width: 180px;
+    margin-bottom: 20px;
+  }
+
+  .discover-items-wrap {
+    width: 246px;
+    height: 331px;
+  }
+
+  .frame-items {
+    margin-top: 40px;
+  }
+
+  .frame-items img {
+    max-width: 80%;
+  }
+
+  .discover-text .discover-text-wrapper .discover-text-title {
+    font-size: 14px;
+  }
+  .discover-text .discover-text-wrapper .discover-text-heading {
+    font-size: 32px;
+  }
+
+  .discover-text .discover-text-wrapper .discover-text-description {
+    font-size: 15px;
+  }
+}
+
+/* Tablet Layout wide: 768px. */
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .container {
+    width: 80vw;
+  }
+
+  nav {
+    width: 80vw;
+    padding: 20px 0;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .mobile-navbar {
+    visibility: visible;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .journey-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .journey-area {
+    padding: 0;
+  }
+
+  .wrap-1 {
+    order: 2;
+  }
+  .wrap-2 {
+    order: 1;
+  }
+
+  .wrap-3 {
+    order: 3;
+  }
+}
+/* Mobile layout max 425 */
+
+@media (max-width: 425px) {
+  .container {
+    width: 95vw;
+  }
+
+  nav {
+    width: 95vw;
+    padding: 20px 0;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .header-logo a {
+    font-size: 36px;
+  }
+
+  .mobile-navbar {
+    visibility: visible;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    width: 45px;
+    height: 45px;
+  }
+
+  .btn-close {
+    top: 30px;
+    right: 10px;
+    font-size: 35px;
+    padding: 0 15px 5px 15px;
+  }
+
+  .journey-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .journey-area {
+    padding: 0;
+  }
+
+  .journey-wrap {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .discover-items {
+    margin-top: 40px;
+    width: 256px;
+    height: 341px;
+  }
+
+  .discover-items .discover-title {
+    font-size: 14px;
+    padding-top: 50px;
+  }
+
+  .discover-items .discover-heading {
+    font-size: 20px;
+  }
+
+  .discover-items .discover-btn {
+    font-size: 12px;
+    width: 170px;
+    margin-bottom: 20px;
+  }
+
+  .discover-items-wrap {
+    width: 246px;
+    height: 331px;
+  }
+
+  .frame-items {
+    margin-top: 40px;
+  }
+
+  .frame-items img {
+    max-width: 80%;
+  }
+
+  .discover-text .discover-text-wrapper .discover-text-title {
+    font-size: 14px;
+  }
+  .discover-text .discover-text-wrapper .discover-text-heading {
+    font-size: 32px;
+  }
+
+  .discover-text .discover-text-wrapper .discover-text-description {
+    font-size: 13px;
+  }
+
+  .wrap-1 {
+    order: 2;
+  }
+  .wrap-2 {
+    order: 1;
+  }
+
+  .wrap-3 {
+    order: 3;
+  }
+}
